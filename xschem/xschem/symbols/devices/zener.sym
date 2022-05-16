@@ -1,0 +1,30 @@
+v {xschem version=2.9.8 file_version=1.2}
+G {}
+K {type=diode
+format="@spiceprefix@name @pinlist @model"
+
+tedax_format="footprint @name @footprint
+value @name @value
+device @name @device
+spicedev @name @spicedev
+spiceval @name @spiceval
+comptag @name @comptag"
+
+template="name=X1 model=XXX device=XXX"}
+V {}
+S {}
+E {}
+L 4 0 5 0 30 {}
+L 4 0 -30 0 -5 {}
+L 4 -20 5 20 5 {}
+L 4 20 -5 20 5 {}
+L 4 -20 5 -20 15 {}
+B 5 -2.5 -32.5 2.5 -27.5 {name=p dir=inout pinnumber=1}
+B 5 -2.5 27.5 2.5 32.5 {name=m dir=inout pinnumber=2}
+P 4 4 -0 5 -10 -5 10 -5 -0 5 {fill=true}
+T {@#0:pinnumber} -5 -26.25 0 1 0.2 0.2 {layer=13}
+T {@#1:pinnumber} -5 17.5 0 1 0.2 0.2 {layer=13}
+T {@name} 15 -18.75 0 0 0.2 0.2 {}
+T {@#0:net_name} 10 -28.75 0 0 0.15 0.15 {layer=15}
+T {@#1:net_name} 10 20 0 0 0.15 0.15 {layer=15}
+T {@model} 15 6.25 0 0 0.2 0.2 {}

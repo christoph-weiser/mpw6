@@ -1,0 +1,10 @@
+v {xschem version=2.9.9 file_version=1.2 }
+G {}
+K {type=show_label
+template="name=r1"
+highlight=true}
+V {}
+S {}
+E {}
+L 1 0 0 10 -10 {}
+B 5 9.84375 -10.15625 10.15625 -9.84375 {name=x dir=inout}
