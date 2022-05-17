@@ -176,3 +176,5 @@ C {devices/noconn.sym} 410 -490 0 1 {name=l2}
 C {devices/noconn.sym} 410 -470 0 1 {name=l3}
 C {devices/noconn.sym} 410 -440 0 1 {name=l27}
 C {devices/noconn.sym} 410 -420 0 1 {name=l29}
+C {devices/launcher.sym} 650 -265 0 0 {name=h1 descr="Caravel Integration" url="user_analog_project_wrapper.sch" program=xschem
+}
