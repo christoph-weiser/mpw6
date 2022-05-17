@@ -1,0 +1,14 @@
+#------------------------------------------------------------
+# CADRC
+#
+# Source this file before starting any of the tools 
+# in the project.
+#
+# Also specify the location of the pdk.
+#------------------------------------------------------------
+
+export PRJ="$(realpath "$(pwd)/../")"
+export XSCHEMRC="$PRJ/design/xschemrc"
+export SIM="$PRJ/sim"
+export PDKPATH="$(realpath "$(pwd)/../pdk")"
+export SKY130_PDK_PATH="$PDKPATH/libraries"
