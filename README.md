@@ -28,11 +28,4 @@ xschem afterwards to get an full overview.
 
 # Layout
 
-
 ![Top-level layout](docs/pictures/top.png "Top-level layout")
-
-
-![SAR-ADC layout](docs/pictures/sar.png "SAR-ADC layout")
-
-
-![Main block layout](docs/pictures/main.png "Main block layout")
