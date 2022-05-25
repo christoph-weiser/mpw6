@@ -29,3 +29,29 @@ xschem afterwards to get an full overview.
 # Layout
 
 ![Top-level layout](docs/pictures/top.png "Top-level layout")
+
+
+# ADC
+
+The ADC is a differential 10 bit SAR, with a capacitative DAC.
+
+## Comparator
+
+The comparator is pretty standard single stage topology. It 
+features a trim array to calibrate its input offset.
+
+## Logic
+
+The entire control logic is synthesized using the openlane flow.
+This allows to easily integrate the trim logic for the 
+comparator into the overall control logic block.
+
+## DAC
+
+The DAC is a capacitative DAC made from a total of 1024 unit caps
+per side.
+
+The unit size is 2.8fF based on FEM simulation carried out
+with Elmer FEM.
+
+![Elmer FEM](docs/pictures/mom_fem.png "DAC Section for Elmer FEM simulation")
