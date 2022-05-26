@@ -1,0 +1,160 @@
+Header
+  CHECK KEYWORDS Warn
+  Mesh DB "." "capacitor"
+  Include Path ""
+  Results Directory "outputs"
+End
+
+Simulation
+  Max Output Level = 5
+  Coordinate System = Cartesian
+  Coordinate Mapping(3) = 1 2 3
+  Simulation Type = Steady state
+  Steady State Max Iterations = 1
+  Output Intervals(1) = 1
+  Solver Input File = case.sif
+  Post File = case.vtu
+  Coordinate Scaling = 1e-3
+End
+
+Constants
+  Gravity(4) = 0 -1 0 9.82
+  Stefan Boltzmann = 5.670374419e-08
+  Permittivity of Vacuum = 8.85418781e-12
+  Permeability of Vacuum = 1.25663706e-6
+  Boltzmann Constant = 1.380649e-23
+  Unit Charge = 1.6021766e-19
+End
+
+Body 1
+  Target Bodies(1) = 1
+  Name = "Body 1"
+  Equation = 1
+  Material = 1
+End
+
+Solver 1
+  Equation = Electrostatics
+  Capacitance Matrix Filename = "outputs/caps.txt"
+  Calculate Electric Flux = True
+  Calculate Capacitance Matrix = True
+  Variable = Potential
+  Calculate Electric Field = True
+  Capacitance Bodies = 11
+  Calculate Electric Energy = True
+  Procedure = "StatElecSolve" "StatElecSolver"
+  Exec Solver = Always
+  Stabilize = True
+  Optimize Bandwidth = True
+  Steady State Convergence Tolerance = 1.0e-5
+  Nonlinear System Convergence Tolerance = 1.0e-7
+  Nonlinear System Max Iterations = 20
+  Nonlinear System Newton After Iterations = 3
+  Nonlinear System Newton After Tolerance = 1.0e-3
+  Nonlinear System Relaxation Factor = 1
+  Linear System Solver = Iterative
+  Linear System Iterative Method = BiCGStab
+  Linear System Max Iterations = 500
+  Linear System Convergence Tolerance = 1.0e-10
+  BiCGstabl polynomial degree = 2
+  Linear System Preconditioning = ILU0
+  Linear System ILUT Tolerance = 1.0e-3
+  Linear System Abort Not Converged = False
+  Linear System Residual Output = 10
+  Linear System Precondition Recompute = 1
+End
+
+Equation 1
+  Name = "electrostatics"
+  Electric Field = Computed
+  Active Solvers(1) = 1
+End
+
+Material 1
+  Name = "silicon"
+  Relative Permittivity = 4.2
+End
+
+Boundary Condition 1
+  Target Boundaries(6) = 2 3 4 5 6 7 
+  Name = "cap1"
+  Capacitance Body = 1
+  Potential = 0
+End
+
+Boundary Condition 2
+  Target Boundaries(6) = 8 9 10 11 12 13 
+  Name = "cap2"
+  Potential = 0
+  Capacitance Body = 2
+End
+
+Boundary Condition 3
+  Target Boundaries(6) = 14 15 16 17 18 19 
+  Name = "cap3"
+  Potential = 0
+  Capacitance Body = 3
+End
+
+Boundary Condition 4
+  Target Boundaries(6) = 20 21 22 23 24 25 
+  Name = "cap4"
+  Capacitance Body = 4
+  Potential = 0
+End
+
+Boundary Condition 5
+  Target Boundaries(6) = 26 27 28 29 30 31 
+  Name = "cap5"
+  Potential = 0
+  Capacitance Body = 5
+End
+
+Boundary Condition 6
+  Target Boundaries(6) = 32 33 34 35 36 37 
+  Name = "cap6"
+  Potential = 0
+  Capacitance Body = 6
+End
+
+Boundary Condition 7
+  Target Boundaries(6) = 38 39 40 41 42 43 
+  Name = "cap7"
+  Capacitance Body = 7
+  Potential = 0
+End
+
+Boundary Condition 8
+  Target Boundaries(6) = 90 91 92 93 94 95 
+  Name = "cap8"
+  Potential = 0
+  Capacitance Body = 8
+End
+
+Boundary Condition 9
+  Target Boundaries(6) = 96 97 98 99 100 101 
+  Name = "cap9"
+  Potential = 0
+  Capacitance Body = 9
+End
+
+Boundary Condition 10
+  Target Boundaries(6) = 102 103 104 105 106 107 
+  Name = "cap10"
+  Potential = 0
+  Capacitance Body = 10
+End
+
+Boundary Condition 11
+  Target Boundaries(46) = 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 
+  Name = "common"
+  Potential = 0
+  Capacitance Body = 11
+End
+
+Boundary Condition 12
+  Target Boundaries(1) = 1 
+  Name = "farfield"
+  Electric Infinity BC = True
+End
+
