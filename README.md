@@ -51,7 +51,7 @@ comparator into the overall control logic block.
 The DAC is a capacitative DAC made from a total of 1024 unit caps
 per side.
 
-The unit size is 2.8fF based on FEM simulation carried out
+The unit size is ~3fF based on FEM simulation carried out
 with Elmer FEM.
 
 ![Elmer FEM](docs/pictures/mom_fem.png "DAC Section for Elmer FEM simulation")
