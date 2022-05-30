@@ -82,7 +82,7 @@ block name.
 # Top-Level Simulation
 
 A complete extracted top-level simulation was carried out using a modified
-PDK and [xyce](https://github.com/Xyce/Xyce Xyce).
+PDK and [Xyce](https://github.com/Xyce/Xyce).
 
 An example from system startup to completion of the first SAR conversion cycle
 with zero differential input voltage can be seen below.
