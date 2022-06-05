@@ -63,7 +63,7 @@ You can find the full simulation setup in the elmer subfolder of this repo.
 ## Layout
 
 The complete SAR-ADC layout can be seen below. It occupies an area of approximately
-0.08745 mm² (530 μm x ~165 μm).
+0.08745 mm² (530 μm x 165 μm).
 
 ![SAR layout](docs/pictures/sar_layout.png "SAR layout")
 
