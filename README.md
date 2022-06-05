@@ -60,6 +60,13 @@ You can find the full simulation setup in the elmer subfolder of this repo.
 ![Elmer FEM](docs/pictures/mom_fem.png "DAC Section for Elmer FEM simulation")
 
 
+## Layout
+
+The complete SAR-ADC layout can be seen below. It occupies an area of approximately
+0.08745 mm² (530 μm x ~165 μm).
+
+![SAR layout](docs/pictures/sar_layout.png "SAR layout")
+
 # Simulation
 
 All parts have been simulated for PVT where relevant.
