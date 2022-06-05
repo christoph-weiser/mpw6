@@ -72,14 +72,14 @@ To carry out PVT simulations, I used my custom [ngsim](https://github.com/chrisc
 python package that allows to manipulate spice netlists between runs. 
 
 
-# Block Simulation
+## Block Simulation
 
 A lot of different simulations were carried out on the individual blocks. 
 The testbenches can be found in the xschem/tb folder under the respective
 block name.
 
 
-# Top-Level Simulation
+## Top-Level Simulation
 
 A complete extracted top-level simulation was carried out using a modified
 PDK and [Xyce](https://github.com/Xyce/Xyce).
