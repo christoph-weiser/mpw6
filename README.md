@@ -65,13 +65,13 @@ You can find the full simulation setup in the elmer subfolder of this repo.
 
 The process is:
 
-    - [klayout](https://www.klayout.de/) with [gds3xtrude](https://codeberg.org/tok/gds3xtrude) to get a stl mesh of the layout
-    - [freecad](https://www.freecadweb.org/) to convert mesh to step and encapsulate layout in boundary.
-    - [gmsh](https://gmsh.info/) to create a .msh 3D mesh from the step file.
-    - ElmerMesh to convert the .msh file to Elmer compatible mesh.
-    - ElmerGUI to define boundary conditions for the problem.
-    - ElmerSolver to solve for the electric field, capacitance etc.
-    - [Paraview](https://www.paraview.org/) to verify the solution.
+- [klayout](https://www.klayout.de/) with [gds3xtrude](https://codeberg.org/tok/gds3xtrude) to get a stl mesh of the layout
+- [freecad](https://www.freecadweb.org/) to convert mesh to step and encapsulate layout in boundary.
+- [gmsh](https://gmsh.info/) to create a .msh 3D mesh from the step file.
+- ElmerMesh to convert the .msh file to Elmer compatible mesh.
+- ElmerGUI to define boundary conditions for the problem.
+- ElmerSolver to solve for the electric field, capacitance etc.
+- [Paraview](https://www.paraview.org/) to verify the solution.
 
 ![Elmer FEM](docs/pictures/mom_fem.png "DAC Section for Elmer FEM simulation")
 
@@ -87,9 +87,9 @@ The complete SAR-ADC layout can be seen below. It occupies an area of approximat
 
 All parts have been simulated, using [ngspice](http://ngspice.sourceforge.net/), for PVT where relevant.
 
-    - TT, SS, SF, FF, FS + Cmax, Cmin + Rmax, Rmin
-    - Voltage +-10%
-    - Temperature range -20° to 85°
+- TT, SS, SF, FF, FS + Cmax, Cmin + Rmax, Rmin
+- Voltage +-10%
+- Temperature range -20° to 85°
 
 To carry out PVT simulations, I used my custom [ngsim](https://github.com/chrische-xx/ngsim) 
 python package that allows to manipulate spice netlists between runs. 
