@@ -17,7 +17,10 @@ Included are:
 - Schematics for all parts of the layout.
 - Testbenches for all the individual blocks.
 - Simulation corners setups for process corner simulations.
+- FEM simulation setup
 
+And Always Remember:
+  - This is a hobby. I'm not a professional designer. So if you want to reuse parts of this design, you're welcome to do so, but make sure to test them accordingly.
 
 # Schematics
 
