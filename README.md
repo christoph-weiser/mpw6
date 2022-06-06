@@ -22,11 +22,16 @@ Included are:
 # Schematics
 
 Simply source cadrc in the xschem folder and execute 
-xschem afterwards to get an full overview.
+[xschem](https://xschem.sourceforge.io/stefan/index.html) afterwards to get an full overview.
 
 ![Top Schematic](docs/pictures/xschem_top.png "Top Schematic")
 
+
 # Layout
+
+The layout was created using [magic](http://opencircuitdesign.com/magic) 
+with the [open_pdk](https://github.com/RTimothyEdwards/open_pdks) sky130 setup as a pcell generator
+and [klayout](https://www.klayout.de/) for the layout and assembly of the gds.
 
 ![Top-level layout](docs/pictures/top.png "Top-level layout")
 
