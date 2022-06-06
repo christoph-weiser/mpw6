@@ -88,6 +88,23 @@ The complete SAR-ADC layout can be seen below. It occupies an area of approximat
 
 ![SAR layout](docs/pictures/sar_layout.png "SAR layout")
 
+
+# Main
+
+The main section contains various blocks that support the independent operation 
+of the ADC.
+
+![Architecture](docs/pictures/arch.png "Overall design architecture")
+
+
+## Layout
+
+The complete Main layout can be seen below. It occupies an area of approximately
+0.1054 mm² ( 285 μm x 370 μm).
+
+![Main Layout](docs/pictures/main_layout.png "Layout of the Main block")
+
+
 # Simulation
 
 All parts have been simulated, using [ngspice](http://ngspice.sourceforge.net/), for PVT where relevant.
