@@ -59,7 +59,7 @@ comparator into the overall control logic block.
 
 For faster simulation the ngspice mixed-mode xspice feature was used.
 [Yosys](https://github.com/YosysHQ/yosys) can be used to synthesize a xspice 
-compatible netlist that only uses code-model components (INV, NAND, NOT, DFF etc.) 
+compatible netlist that only uses code-model components (NAND, NOT, DFF etc.) 
 which speeds up simulation substantially.
 
 ## DAC
