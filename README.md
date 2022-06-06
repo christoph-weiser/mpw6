@@ -37,6 +37,7 @@ The ADC is a differential 10 bit SAR, with a capacitative DAC.
 
 ![SAR-Architecture](docs/pictures/sar_arch.png "SAR-Architecture")
 
+
 ## Comparator
 
 The comparator is pretty standard single stage topology. It 
@@ -44,9 +45,14 @@ features a trim array to calibrate its input offset.
 
 ## Logic
 
-The entire control logic is synthesized using the openlane flow.
+The entire control logic is synthesized using the [openlane](https://github.com/The-OpenROAD-Project/OpenLane) flow.
 This allows to easily integrate the trim logic for the 
 comparator into the overall control logic block.
+
+For faster simulation the ngspice mixed-mode xspice feature was used.
+[Yosys](https://github.com/YosysHQ/yosys) can be used to synthesize a xspice 
+compatible netlist that only uses code-model components (INV, NAND, NOT, DFF etc.) 
+which speeds up simulation substantially.
 
 ## DAC
 
@@ -54,8 +60,18 @@ The DAC is a capacitative DAC made from a total of 1024 unit caps
 per side. The DAC is top-plate sampled using a bootstrapped switch.
 
 The unit size of the DAC elements is ~3fF based on FEM simulation carried out
-with Elmer FEM.
+with [Elmer FEM](https://github.com/ElmerCSC/elmerfem).
 You can find the full simulation setup in the elmer subfolder of this repo.
+
+The process is:
+
+    - [klayout](https://www.klayout.de/) with [gds3xtrude](https://codeberg.org/tok/gds3xtrude) to get a stl mesh of the layout
+    - [freecad](https://www.freecadweb.org/) to convert mesh to step and encapsulate layout in boundary.
+    - [gmsh](https://gmsh.info/) to create a .msh 3D mesh from the step file.
+    - ElmerMesh to convert the .msh file to Elmer compatible mesh.
+    - ElmerGUI to define boundary conditions for the problem.
+    - ElmerSolver to solve for the electric field, capacitance etc.
+    - [Paraview](https://www.paraview.org/) to verify the solution.
 
 ![Elmer FEM](docs/pictures/mom_fem.png "DAC Section for Elmer FEM simulation")
 
@@ -69,7 +85,7 @@ The complete SAR-ADC layout can be seen below. It occupies an area of approximat
 
 # Simulation
 
-All parts have been simulated for PVT where relevant.
+All parts have been simulated, using [ngspice](http://ngspice.sourceforge.net/), for PVT where relevant.
 
     - TT, SS, SF, FF, FS + Cmax, Cmin + Rmax, Rmin
     - Voltage +-10%
