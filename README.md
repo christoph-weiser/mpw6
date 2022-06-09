@@ -2,8 +2,7 @@
 
 This submission features:
 
-- 10b SAR-ADC on powered from external supply.
-- 10b SAR-ADC powered from internal regulators.
+- The first and thus far only open source 10 bit SAR-ADC
 - Bandgap reference.
 - Testbuffer with multiplexer input.
 - Clock generator
@@ -18,6 +17,7 @@ Included are:
 - Testbenches for all the individual blocks.
 - Simulation corners setups for process corner simulations.
 - FEM simulation setup
+- Verilog Code for SAR logic
 
 And Always Remember:
   - This is a hobby. I'm not a professional designer. So if you want to reuse parts of this design, you're welcome to do so, but make sure to test them accordingly.
