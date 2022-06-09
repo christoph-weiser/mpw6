@@ -38,6 +38,9 @@ and [klayout](https://www.klayout.de/) for the layout and assembly of the gds.
 
 ![Top-level layout](docs/pictures/top.png "Top-level layout")
 
+\
+\
+\
 
 # ADC
 
@@ -121,6 +124,12 @@ The complete SAR-ADC layout can be seen below. It occupies an area of approximat
 
 ![SAR layout](docs/pictures/sar_layout.png "SAR layout")
 
+
+## Simulation
+
+The result of a input voltage sweep across the full input range (-1.8V to 1.8V) can be seen below.
+
+![SAR Simulation](docs/pictures/sar_simulation.png "SAR Simulation")
 
 # Main
 
