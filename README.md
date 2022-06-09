@@ -43,6 +43,26 @@ and [klayout](https://www.klayout.de/) for the layout and assembly of the gds.
 
 The ADC is a differential 10 bit SAR, with a capacitative DAC.
 
+
+### Specifications
+
+| Parameter     | Min   | Typ   |  Max  | Unit |
+|:------------- |:-----:|:-----:|:-----:|:----:|
+| $A_{VDD}$     |       |       | 1.8   | V    |
+| $D_{VDD}$     |       |       | 1.8   | V    |
+| $V_{in,p}$    | $V_{SSA}$  |       | $A_{VDD}$  | V    |
+| $V_{in,n}$    | $V_{SSA}$  |       | $A_{VDD}$  | V    |
+| $V_{CM}$      |       | $A_{VDD}$/2|       | V    |
+| Resolution    |       | 10    |       | bits |
+| $T_{A}$       | -20   |       | 85    | °C   |
+| $C_{in}$      |       |  3    |       | pF   |
+
+
+### Architecture
+
+The Architecture of SAR is shown below. It is a differential
+architecture with a top-plate sampled CDAC.
+
 ![SAR-Architecture](docs/pictures/sar_arch.png "SAR-Architecture")
 
 
@@ -50,6 +70,9 @@ The ADC is a differential 10 bit SAR, with a capacitative DAC.
 
 The comparator is pretty standard single stage topology. It 
 features a trim array to calibrate its input offset.
+
+![Comparator Schematic](docs/pictures/comparator.png "Comparator architecture")
+
 
 ## Logic
 
@@ -65,7 +88,7 @@ which speeds up simulation substantially.
 ## DAC
 
 The DAC is a capacitative DAC made from a total of 1024 unit caps
-per side. The DAC is top-plate sampled using a bootstrapped switch.
+per side.
 
 The unit size of the DAC elements is ~3fF based on FEM simulation carried out
 with [Elmer FEM](https://github.com/ElmerCSC/elmerfem).
@@ -82,6 +105,13 @@ The process is:
 - [Paraview](https://www.paraview.org/) to verify the solution.
 
 ![Elmer FEM](docs/pictures/mom_fem.png "DAC Section for Elmer FEM simulation")
+
+
+## Sampling Switch
+
+The DAC is top-plate sampled using a bootstrapped switch.
+
+![Sampling Switch](docs/pictures/bssw.png "Sampling Switch")
 
 
 ## Layout
@@ -125,7 +155,6 @@ python package that allows to manipulate spice netlists between runs.
 A lot of different simulations were carried out on the individual blocks. 
 The testbenches can be found in the xschem/tb folder under the respective
 block name.
-
 
 ## Top-Level Simulation
 
