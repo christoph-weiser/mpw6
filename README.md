@@ -38,10 +38,10 @@ and [klayout](https://www.klayout.de/) for the layout and assembly of the gds.
 
 ![Top-level layout](docs/pictures/top.png "Top-level layout")
 
-\
-\
-\
-
+ \
+ \
+ \ 
+ 
 # ADC
 
 The ADC is a differential 10 bit SAR, with a capacitative DAC.
@@ -53,13 +53,14 @@ The ADC is a differential 10 bit SAR, with a capacitative DAC.
 |:------------- |:-----:|:-----:|:-----:|:----:|
 | $A_{VDD}$     |       |       | 1.8   | V    |
 | $D_{VDD}$     |       |       | 1.8   | V    |
-| $V_{in,p}$    | $V_{SSA}$  |       | $A_{VDD}$  | V    |
-| $V_{in,n}$    | $V_{SSA}$  |       | $A_{VDD}$  | V    |
+| $V_{in,p}$    | $V_{SSA}$  |       | $A_{VDD}$*  | V    |
+| $V_{in,n}$   | $V_{SSA}$  |       | $A_{VDD}$*  | V    |
 | $V_{CM}$      |       | $A_{VDD}$/2|       | V    |
 | Resolution    |       | 10    |       | bits |
 | $T_{A}$       | -20   |       | 85    | °C   |
 | $C_{in}$      |       |  3    |       | pF   |
 
+\* 3.3V if ADC is not sampling the input signal.
 
 ### Architecture
 
