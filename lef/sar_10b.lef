@@ -1,0 +1,195 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sar_10b
+  CLASS BLOCK ;
+  FOREIGN sar_10b ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 527.820 BY 162.830 ;
+  PIN result8
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 85.765 0.150 86.065 ;
+    END
+  END result8
+  PIN result9
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 86.465 0.150 86.765 ;
+    END
+  END result9
+  PIN result7
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 85.065 0.150 85.365 ;
+    END
+  END result7
+  PIN result6
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 84.365 0.150 84.665 ;
+    END
+  END result6
+  PIN result5
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 83.665 0.150 83.965 ;
+    END
+  END result5
+  PIN result4
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 82.965 0.150 83.265 ;
+    END
+  END result4
+  PIN rstn
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 76.665 0.150 76.965 ;
+    END
+  END rstn
+  PIN result3
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 82.265 0.150 82.565 ;
+    END
+  END result3
+  PIN result2
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 81.565 0.150 81.865 ;
+    END
+  END result2
+  PIN result1
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 80.865 0.150 81.165 ;
+    END
+  END result1
+  PIN result0
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 80.165 0.150 80.465 ;
+    END
+  END result0
+  PIN valid
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 79.465 0.150 79.765 ;
+    END
+  END valid
+  PIN cal
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 78.765 0.150 79.065 ;
+    END
+  END cal
+  PIN en
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 78.065 0.150 78.365 ;
+    END
+  END en
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 77.365 0.150 77.665 ;
+    END
+  END clk
+  PIN vinp
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 526.920 121.475 527.820 122.275 ;
+    END
+  END vinp
+  PIN vinn
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 526.920 41.075 527.820 41.875 ;
+    END
+  END vinn
+  PIN avdd
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met5 ;
+        RECT 524.620 21.840 527.820 28.240 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 524.620 134.590 527.820 140.990 ;
+    END
+  END avdd
+  PIN avss
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met5 ;
+        RECT 524.620 0.000 527.820 6.400 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 524.620 156.430 527.820 162.830 ;
+    END
+  END avss
+  PIN dvdd
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met5 ;
+        RECT 0.000 21.840 3.200 28.240 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 0.000 134.590 3.200 140.990 ;
+    END
+  END dvdd
+  PIN dvss
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met5 ;
+        RECT 0.000 0.000 3.200 6.400 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 0.000 156.430 3.200 162.830 ;
+    END
+  END dvss
+END sar_10b
+END LIBRARY
