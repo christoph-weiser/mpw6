@@ -64,7 +64,7 @@ The ADC is a differential 10 bit SAR, with a capacitative DAC.
 | Area         |           | 0.08745       |           | mm²  |
 | $C_{in}$     |           | 3             |           | pF   |
 
-\*  3.3V if ADC is not sampling the input signal.
+\*  3.3V if ADC is not sampling the input signal. \
 \*\* During sampling/conversion phase. $A_{VDD} = 1.8V$, $D_{VDD} = 1.8V$
 
 
