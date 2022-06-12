@@ -53,8 +53,8 @@ The ADC is a differential 10 bit SAR, with a capacitative DAC.
 |:-------------|:---------:|:-------------:|:---------:|:----:|
 | $A_{VDD}$    |           |               | 1.8       | V    |
 | $D_{VDD}$    |           |               | 1.8       | V    |
-| $V_{in,p}$   | $V_{SSA}$ |               | $A_{VDD}$*| V    |
-| $V_{in,n}$   | $V_{SSA}$ |               | $A_{VDD}$*| V    |
+| $V_{in,p}$   | $A_{VSS}$ |               | $A_{VDD}$*| V    |
+| $V_{in,n}$   | $A_{VSS}$ |               | $A_{VDD}$*| V    |
 | $V_{CM}$     |           | $A_{VDD}$/2   |           | V    |
 | Resolution   |           | 10            |           | bits |
 | $f_{clk}$    |           |               | 10        | MHz  |
