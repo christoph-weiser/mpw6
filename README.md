@@ -2,7 +2,7 @@
 
 This submission features:
 
-- The first and thus far only open source 10 bit SAR-ADC
+- The first open source 10 bit SAR-ADC
 - Bandgap reference.
 - Testbuffer with multiplexer input.
 - Clock generator
@@ -16,7 +16,7 @@ Included are:
 - Schematics for all parts of the layout.
 - Testbenches for all the individual blocks.
 - Simulation corners setups for process corner simulations.
-- FEM simulation setup
+- FEM simulation setup for DAC capacitor.
 - Verilog Code for SAR logic
 
 And Always Remember:
@@ -49,18 +49,24 @@ The ADC is a differential 10 bit SAR, with a capacitative DAC.
 
 ### Specifications
 
-| Parameter     | Min   | Typ   |  Max  | Unit |
-|:------------- |:-----:|:-----:|:-----:|:----:|
-| $A_{VDD}$     |       |       | 1.8   | V    |
-| $D_{VDD}$     |       |       | 1.8   | V    |
-| $V_{in,p}$    | $V_{SSA}$  |       | $A_{VDD}$*  | V    |
-| $V_{in,n}$   | $V_{SSA}$  |       | $A_{VDD}$*  | V    |
-| $V_{CM}$      |       | $A_{VDD}$/2|       | V    |
-| Resolution    |       | 10    |       | bits |
-| $T_{A}$       | -20   |       | 85    | °C   |
-| $C_{in}$      |       |  3    |       | pF   |
+| Parameter    | Min       | Typ           |  Max      | Unit |
+|:-------------|:---------:|:-------------:|:---------:|:----:|
+| $A_{VDD}$    |           |               | 1.8       | V    |
+| $D_{VDD}$    |           |               | 1.8       | V    |
+| $V_{in,p}$   | $V_{SSA}$ |               | $A_{VDD}$*| V    |
+| $V_{in,n}$   | $V_{SSA}$ |               | $A_{VDD}$*| V    |
+| $V_{CM}$     |           | $A_{VDD}$/2   |           | V    |
+| Resolution   |           | 10            |           | bits |
+| $f_{clk}$    |           |               | 10        | MHz  |
+| $I_{AVDD}$** |           | 5.1           |           | μA   |
+| $I_{DVDD}$** |           | 16.9          |           | μA   |
+| $T_{A}$      | -20       |               | 85        | °C   |
+| Area         |           | 0.08745       |           | mm²  |
+| $C_{in}$     |           | 3             |           | pF   |
 
-\* 3.3V if ADC is not sampling the input signal.
+\*  3.3V if ADC is not sampling the input signal.
+\*\* During sampling/conversion phase. $A_{VDD} = 1.8V$, $D_{VDD} = 1.8V$
+
 
 ### Architecture
 
