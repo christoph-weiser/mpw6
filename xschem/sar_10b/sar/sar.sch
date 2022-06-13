@@ -125,7 +125,6 @@ C {devices/lab_wire.sym} 1500 -180 0 1 {name=l51 sig_type=std_logic lab=cal}
 C {devices/lab_wire.sym} 1500 -160 0 1 {name=l52 sig_type=std_logic lab=en}
 C {devices/lab_wire.sym} 1500 -130 0 1 {name=l53 sig_type=std_logic lab=clk}
 C {devices/lab_wire.sym} 1500 -110 0 1 {name=l54 sig_type=std_logic lab=rstn}
-C {xschem/symbols/devices/noconn.sym} 1160 -60 0 0 {name=l1}
 C {xschem/symbols/devices/noconn.sym} 1110 -80 0 0 {name=l7[7:0]
 }
 C {devices/lab_wire.sym} 1500 -80 0 1 {name=l7 sig_type=std_logic lab=dvdd

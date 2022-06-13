@@ -34,7 +34,7 @@ B 5 -2.5 -112.5 2.5 -107.5 {name=ctlp[9:0] dir=out }
 B 5 297.5 -92.5 302.5 -87.5 {name=clk dir=in }
 B 5 -2.5 -42.5 2.5 -37.5 {name=result[9:0] dir=in }
 B 5 -2.5 -92.5 2.5 -87.5 {name=ctln[9:0] dir=out }
-B 5 -2.5 -22.5 2.5 -17.5 {name=valid dir=in }
+B 5 -2.5 -22.5 2.5 -17.5 {name=valid dir=out}
 B 5 297.5 -72.5 302.5 -67.5 {name=rstn dir=in }
 B 5 -2.5 -72.5 2.5 -67.5 {name=sample dir=out }
 B 5 297.5 -42.5 302.5 -37.5 {name=dvdd
