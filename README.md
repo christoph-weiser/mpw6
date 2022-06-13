@@ -19,9 +19,6 @@ Included are:
 - FEM simulation setup for DAC capacitor.
 - Verilog Code for SAR logic
 
-And Always Remember:
-  - This is a hobby. I'm not a professional designer. So if you want to reuse parts of this design, you're welcome to do so, but make sure to test them accordingly.
-
 # Schematics
 
 Simply source cadrc in the xschem folder and execute 
@@ -58,14 +55,11 @@ The ADC is a differential 10 bit SAR, with a capacitative DAC.
 | $V_{CM}$     |           | $A_{VDD}$/2   |           | V    |
 | Resolution   |           | 10            |           | bits |
 | $f_{clk}$    |           |               | 10        | MHz  |
-| $I_{AVDD}$** |           | 5.1           |           | μA   |
-| $I_{DVDD}$** |           | 16.9          |           | μA   |
 | $T_{A}$      | -20       |               | 85        | °C   |
 | Area         |           | 0.08745       |           | mm²  |
 | $C_{in}$     |           | 3             |           | pF   |
 
 \*  3.3V if ADC is not sampling the input signal.
-\*\* During sampling/conversion phase. $A_{VDD} = 1.8V$, $D_{VDD} = 1.8V$
 
 
 ### Architecture
