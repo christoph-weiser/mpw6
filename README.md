@@ -187,3 +187,13 @@ If this project gets a place on the MPW6 shuttle, I will continue
 to characterize the ASIC, using a opensource measurement flow.
 The results will then be published on this page/repo
 
+
+# Open Access Ressources
+
+Very detailed and good ressource on SAR-ADC design.
+[A Low Power 10-bit SAR ADC in a 45nm process - V.A. Dyachenko](https://repository.tudelft.nl/islandora/object/uuid:407e656f-30b6-4694-a7b3-19631892ceea/datastream/OBJ/download)
+
+Various topics from bandgap reference to sampling switch circuits.
+[A circuit for all Seasons - B. Razavi](https://www.seas.ucla.edu/brweb/journal.html)
+
+
