@@ -184,11 +184,38 @@ This simulation utilizes all internal blocks, such a bandgap, ldo and oscillator
 to operate the ADC.
 
 
-# To be Continued...
+# Measurements
 
-If this project gets a place on the MPW6 shuttle, I will continue
-to characterize the ASIC, using a opensource measurement flow.
-The results will then be published on this page/repo
+For the Full Report see: [Report.pdf](measurements/report/report.pdf).
+
+## Main
+
+### Basis Current Source (BCS)
+
+### Bandgap Reference Voltage (BGR)
+
+![Bandgap trim](measurements/report/pic/bgr_trim.png "Trim of the BGR")
+
+### Bias Generator (BIAG)
+
+![vb voltages](measurements/report/pic/vb.png "vb voltages")
+
+### Testbuffer (TB)
+
+![Testbuffer input cycle](measurements/report/pic/tb_cycle.png "Testbuffer input cycle")
+
+![Testbuffer Rise and Fall](measurements/report/pic/tb_rise_fall.png "Testbuffer Rise and Fall")
+
+![Testbuffer noise](measurements/report/pic/tb_noise.png "Testbuffer noise")
+
+### Low Dropout Regulator (LDO)
+
+![LDO Rise and Fall](measurements/report/pic/ldo_rise_fall.png "LDO Rise and Fall")
+
+### Current Starved Oscillator (OSC)
+
+
+## SAR
 
 
 # Open Access Ressources
