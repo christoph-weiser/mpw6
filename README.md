@@ -218,9 +218,6 @@ For the Full Report see: [report.pdf](measurements/report/report.pdf).
 <!-- ### Current Starved Oscillator (OSC) -->
 
 
-## SAR
-
-
 # Open Access Ressources
 
 Very detailed and good ressource on SAR-ADC design.
