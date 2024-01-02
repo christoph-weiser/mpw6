@@ -1,4 +1,5 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.4.3 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -68,7 +69,7 @@ C {lab_wire.sym} 3880 100 0 0 {name=l13 sig_type=std_logic lab=vdda1
 }
 C {lab_wire.sym} 3880 120 0 0 {name=l14 sig_type=std_logic lab=vssa1
 }
-C {lab_wire.sym} 3880 70 0 0 {name=l15 sig_type=std_logic lab=la_data_in[69] 
+C {lab_wire.sym} 3880 70 0 0 {name=l15 sig_type=std_logic lab=la_data_in[83] 
 }
 C {lab_wire.sym} 3880 160 0 0 {name=l16 sig_type=std_logic lab=la_data_in[62] 
 }
